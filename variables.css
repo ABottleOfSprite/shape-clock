@@ -1,0 +1,37 @@
+:root {
+  /* palette-1 */
+  --clr-ebony: #4E5340;
+  --clr-xanthous: #F3B61F;
+  --clr-old-gold: #A29F15;
+  --clr-ash-gray: #BAD1CD;
+  --clr-claret: #820933;
+  --clr-celestial-blue: #009FFD;
+  --clr-pigment-green: #069E2D;
+
+  /* palette-2 */
+  --clr-golden-gate-bridge: #EB4511;
+  --clr-silver: #C1BFB5;
+  --clr-egg-white: #FEFDFF;
+  --clr-rufus: #B02E0C;
+  --clr-powder-blue: #8EB1C8;
+  --clr-cream: #F1FFC4;
+  --clr-cat-poly-green: #2F4B26;
+
+  /* palette-3 */
+  --clr-davys-gray: #514f59;
+  --clr-dark-purple: #1D1128;
+  --clr-rebecca-purple: #5941A9;
+  --clr-pale-purple: #6d72c3;
+  --clr-medium-slate-blue: #e5d4ed;
+  --clr-khaki: #b2aa8e;
+  --clr-vanilla: #faf2a1;
+
+  /* palette-4 */
+  --clr-black: #02010a;
+  --clr-oxford-blue: #04052e;
+  --clr-turquoise: #73eedc;
+  --clr-tiffany-blue: #73c2be;
+  --clr-duke-blue: #0d00a4;
+  --clr-reseda-green: #676f54;
+  --clr-slate-gray: #6e8387;
+}
