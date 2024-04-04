@@ -48,16 +48,19 @@ const colors = [
   ['--clr-black', '--clr-oxford-blue', '--clr-turquoise', '--clr-tiffany-blue', '--clr-duke-blue', '--clr-reseda-green', '--clr-slate-gray']//palette 4
 ];
 
-let currentPaletteIndex = 1;
+let currentPaletteIndex = 0;
 
 function changeColors() {
     let shapes = document.getElementsByClassName("shape");
     let currentPalette = colors[currentPaletteIndex];
     for (let i = 0; i < shapes.length; i++) {
       shapes[i].style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(currentPalette[i % currentPalette.length]);
+      
     }
     // Update currentPaletteIndex for the next click
     currentPaletteIndex = (currentPaletteIndex + 1) % colors.length;
+
+    
   }
 
   // Add event listener to the button
@@ -67,6 +70,7 @@ function changeColors() {
   
 
   //time
+
 
   function updateTime() {
     let now = new Date();
@@ -81,6 +85,7 @@ function changeColors() {
 
     let timeString = hours + ":" + minutes + ":" + seconds;
     document.getElementById("timeDisplay").textContent = timeString;
+
   }
 
   // Update time every second
@@ -88,3 +93,24 @@ function changeColors() {
 
   // Initial call to display time immediately
   updateTime();
+
+
+  const timeDisplay = document.getElementById("timeDisplay");
+  timeDisplay.addEventListener("mouseenter", blur);
+  
+
+  function blur() {
+    const winTile = document.getElementById("timeBlur");
+    winTile.style.opacity = "1";
+  }
+  
+  timeDisplay.addEventListener("mouseleave", blurOff);
+
+  function blurOff() {
+    const winTile = document.getElementById("timeBlur");
+    winTile.style.opacity = "0";
+  }
+
+  
+
+  
